@@ -143,6 +143,7 @@
    transform: rotate(360deg);
   }
 }
+
 .but-3{
  outline: none;
  cursor: pointer;
@@ -243,7 +244,7 @@
  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-.button-2:hover::before {
+.but-2:hover::before {
  transform: translate3d(100%, 0, 0);
 }
 
@@ -373,21 +374,25 @@ input[type="radio"]{
 }
 .content i{
     font-size:10px;
-    margin-right:10px ;
+    margin-right:10px;
+    font-family: 'Quicksand', sans-serif;
 }
 .accordian .content{
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
     color: #666666;
     border-left: 5px solid #912376;
     background-color: #FFFFFF;
     padding: 0 10px;
-    justify-content:center;
+    transform: translatex(-100px);
+    text-align: left;
     line-height: 24px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s,padding 0.5s;
 }
 .accordian input[type="radio"]:checked + label + .content{
-    max-height: 400px;
+    max-height: 150px;
     padding: 10px 10px 20px;
 }
 
@@ -860,7 +865,7 @@ input[type="radio"]{
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     margin-right: 8px; 
     padding: 0.1rem 0.3rem;
-    font-size: 8px;
+    font-size: 7px;
    }
    .about-title{
     font-size:15px;
@@ -905,6 +910,7 @@ input[type="radio"]{
    .accordian .content{
     font-size: 8px;
     border-left: 3px solid #912376;
+    line-height: 15px;
    }
    .acc-li{
     padding: 4px;
@@ -912,6 +918,10 @@ input[type="radio"]{
    .content i{
     font-size: 8px;
    }
+   .accordian input[type="radio"]:checked + label + .content{
+    max-height: 100px;
+    padding: 5px 10px 10px;
+}
    .skill-title{
     font-size:15px;
     padding-top: 20px;
