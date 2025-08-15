@@ -12,7 +12,7 @@ export default function Nav() {
          <li className="li"><a href="#skill" className="a">skill</a></li>
          <li className="li"><a href="#project" className="a">project</a></li>
          <li className="li"><a href="#footer" className="a">contact us</a></li>
-         <button class="button-33" role="button">Lets talk</button>
+         <a href="https://wa.me/qr/3LU5M7DFO5F4K1"><button class="button-33" role="button">Lets talk</button></a>
          </ul>
     </nav>
       
