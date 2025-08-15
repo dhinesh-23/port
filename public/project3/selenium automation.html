@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Automation course</title>
+    <link href="" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+   font-family:georgia,'times new roman',times,serif;
+  }
+  nav{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background:rgb(255, 255, 255);
+}   
+.img{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left:70px;
+    top: 6px;;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;;
+}
+a{  
+   font-size: 14px;
+   font-family: Open Sans,Arial,sans-serif;
+   color:rgb(10, 10, 10);
+   text-decoration:none;
+   font-weight: 600;
+   cursor: pointer;
+}
+nav li a:hover{
+    color:#b0cac8;
+    transition: all 0.4s ease 0%;
+}
+.btn2{
+    position: absolute;
+    right: 10%;
+    top:3%;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    background:#256BED;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px 70px;
+    letter-spacing: 1.2px;
+    filter: drop-shadow(0px 5px 5px #555);
+}
+.course-span{
+    margin-left: 10px;
+    width:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+.btn2:hover span{
+    width: 30px;
+}
+.container{
+    position: relative;
+    height: 420px;
+    width: 100vw;
+    background-image:linear-gradient(180deg,#109D0D,#73D822);
+}
+.home{
+    position:absolute;
+    top:3%;
+    right: 13%;
+    height: 300px;
+    width: 450px;
+}
+.t1{
+    font-family: Open Sans,Arial,sans-serif;
+    color: white;
+    padding: 34px;
+    margin-left: 100px;
+    font-size: 42px;
+    text-shadow: 10px;
+}
+.t2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 100;
+    margin-left: 140px;
+    font-size: 18px;
+    text-shadow: 10px;
+}
+.arrow-button {
+    background-color: #fff;     
+    color: #1271f0; 
+    border: none;
+    border-radius: 5px;
+    padding: 12px 35px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    position: relative; 
+    position: absolute;
+    left:10%;
+    top:54%;
+    transition:all.0.5s; 
+  }
+  
+  .arrow-button::after {
+    content: ">";
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .arrow-button:hover {
+    width:260px;
+  }
+  .arrow-button:hover::after {
+    opacity: 1;
+    transition: all.0.3;
+  }
+
+  .container2{
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+
+.t1{
+    font-family: Open Sans,Arial,sans-serif;
+    color:black;
+    background-color:transparent;
+    font-size: 35px;
+    padding-top: 80px;
+    text-align: center;
+}
+.p1{
+    position: absolute;
+    left: 10%;
+    top: 34%;
+    width: 480px;
+    height: 300px;
+    color: #666666;
+    background-color:transparent;
+}
+.about-p{
+    font-family:Open Sans,Arial,sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+.p2{
+    position: absolute;
+    right: 10%;
+    top:34%;
+    width: 480px;
+    height: 250px;
+    color: #666666;
+    background-color:transparent;
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="logo">
+        <nav>
+            <img src="final-logo-01 (5).png" class="img">
+     <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="course.html">COURSES</a></li>
+        <li><a href="">ONLINE SESSION</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+     </ul>
+        </nav>
+        <a href="#" class="btn2">free demo<span class="course-span"><i class="fa fa-angle-right"></i></span></a>
+    </div>
+    <div class="container">
+        <img src="7.jpg" class="home"></img>
+
+        <h1 class="t1">Selenium Automation <br>Training in Chennai</h1> 
+         <h2 class="t2">Selenium training in Chennai with certification and Job<br> Placements. Learn Selenium from beginner basics to<br>advanced level techniques with We Tech Zone.</h2>
+            </div>
+            <button class="arrow-button">CHECK DEMO VIDEO</button>
+    
+            <section class="container2">
+                <h1 class="t1">Amazon Web Service Training</h1>
+              <div class="p1"><p class="about-p"><b>Selenium is an open-source, automated testing tool used to test web applications across various browsers.</b> Selenium can only test web applications, unfortunately, so desktop and mobile apps can’t be tested. However, other tools like Appium and HP’s QTP can be used to test software and mobile applications
+              </p>
+              <li>Selenium is easy to use since it’s primarily developed in JavaScript</li>
+              <li>Selenium can test web applications against various browsers like Firefox, Chrome, Opera, and Safari </li>
+              <li>Tests can be coded in several programming languages like Java, Python, Perl, PHP, and Ruby</li>
+              </div>
+              <div class="p2"><p class="about-p">Jason Huggins, an engineer at ThoughtWorks, Chicago, found manual testing repetitive and boring. He developed a JavaScript program to automate the testing of a web application, called JavaScriptTestRunner. 
+                Initially, the new invention was deployed by the employees at Thoughtworks. However, in 2004, it was renamed Selenium and was made open source. Since its inception, Selenium has been a powerful automation testing tool to test various web applications across different platforms.</p>
+              </div>
+            </section>
+</body>
+</html>

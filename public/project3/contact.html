@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us - We Tech Zone</title>
+    <link href="" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+   font-family:georgia,'times new roman',times,serif;
+  }
+  nav{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background:rgb(255, 255, 255);
+}   
+.img{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left:70px;
+    top: 6px;;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;;
+}
+a{  
+   font-size: 14px;
+   font-family: Open Sans,Arial,sans-serif;
+   color:rgb(10, 10, 10);
+   text-decoration:none;
+   font-weight: 600;
+   cursor: pointer;
+}
+nav li a:hover{
+    color:#b0cac8;
+    transition: all 0.4s ease 0%;
+}
+.btn2{
+    position: absolute;
+    right: 10%;
+    top:3%;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    background:#256BED;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px 70px;
+    letter-spacing: 1.2px;
+    filter: drop-shadow(0px 5px 5px #555);
+}
+.course-span{
+    margin-left: 10px;
+    width:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+.btn2:hover span{
+    width: 30px;
+}
+.contact-container{
+    width: 100;
+    height:280px;
+    background-color: #256BED;
+}
+.heading{
+    font-family: Open Sans,Arial,sans-serif;
+    color: white;
+    font-size: 45px;
+    text-shadow: 10px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.con-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 450px;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:#fff;
+    width: 330px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 30px;
+    padding-top: 50px;
+    border-radius:5px;
+    filter: drop-shadow(5px 5px 10px #555);
+}
+.card-icon i{
+    font-size:60px;
+    margin-top:2px ;
+    margin-left: 120px;
+    padding: 25px;
+    color:#535B7C;
+}
+.card-t{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Open Sans,Arial,sans-serif;
+    text-transform: uppercase;
+    color:#535B7C;
+    margin-left: 130px;
+    margin-top:8px;
+}
+.card-p1{
+    font-family:Open Sans,Arial,sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    color:#5B5B5B;
+}
+.card-p2{
+    font-family:Open Sans,Arial,sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+    color:#5B5B5B;
+}
+.card-p3{
+    font-family:Open Sans,Arial,sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    color:#5B5B5B;
+}
+.slide1 i{
+    color: #fff;
+    background-color: #256BED;
+    font-size: 25px;
+    font-weight: 100;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+.slide2 i{
+    color: #fff;
+    background-color: #256BED;
+    font-size: 25px;
+    font-weight: 100;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-top: 35px;
+    margin-left: 130px;
+}
+.slide3 i{
+    color: #fff;
+    background-color: #256BED;
+    font-size: 25px;
+    font-weight: 100;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-top: 35px;
+    margin-left: 130px;
+}
+.contact-container-bottom{
+    width: 100vw;
+    height: 220px;
+    color: #F8FBFE;
+}
+.entry-con{
+    position: relative;
+    width: 100vw;
+    height:760px;
+    background-color: #F7F2F2;
+}
+.container2{
+    position: absolute;
+    left: 10%;
+    top:8%;
+    width: 1080px;
+    height: 650px;
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #555;
+}
+.entry-img{
+    position: absolute;
+    right: 0%;
+    height: 650px;
+    width: 280px;
+    border-radius: 0px 12px 12px 0px;
+}
+.heading2{
+    font-family: Open Sans,Arial,sans-serif;
+    color:#747774;
+    font-size: 40px;
+    font-weight:lighter;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-left: 50px;
+    letter-spacing: 3px;
+}
+.entry-p{
+    font-family: Open Sans,Arial,sans-serif;
+    color:#747774;
+    font-size: 18px;
+    font-weight:100;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+::placeholder{
+    font-family: Open Sans,Arial,sans-serif;
+    color:#99B3D4;
+    font-size: 15px;
+    font-weight:100;
+}
+.tf1{
+   padding: 17px 160px 17px 17px;
+   background-color:#F9F9F9;
+   border-radius: 6px;
+   border-color:#99B3D4;
+   margin-left: 50px;
+   margin-top: 60px;
+}
+.tf2{
+   padding: 17px 160px 17px 17px;
+   background-color:#F9F9F9;
+   border-radius: 6px;
+   border-color:#99B3D4;
+   margin-left: 20px;
+   margin-top: 60px;
+}
+.tf3{
+   padding: 17px 160px 17px 17px;
+   background-color:#F9F9F9;
+   border-radius: 6px;
+   border-color:#99B3D4;
+   margin-left: 50px;
+   margin-top: 20px;
+}
+.tf4{
+   padding: 17px 160px 17px 17px;
+   background-color:#F9F9F9;
+   border-radius: 6px;
+   border-color:#99B3D4;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.tf5{
+   padding: 17px 512px 140px 17px;
+   background-color:#F9F9F9;
+   border-radius: 6px;
+   border-color:#99B3D4;
+   margin-left: 50px;
+   margin-top: 20px;
+}
+.entry-btn{
+    width: 170px;
+    height: 50px;
+    color:#fff;
+    background:#256BED;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    margin-left: 562px;
+    margin-top: 10px;
+}
+.entry-btn-span{
+    margin-left: 10px;
+    width:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+.entry-btn:hover span{
+    width: 30px;
+}
+
+.copy-right{
+    width: 100vw;
+    height: 80px;
+    background-color:#043B99;
+}
+.copy-right-p{
+    font-family:Open Sans,Arial,sans-serif ;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    padding-top:30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <nav>
+            <img src="final-logo-01 (5).png" class="img">
+     <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="course.html">COURSES</a></li>
+        <li><a href="">ONLINE SESSION</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+     </ul>
+        </nav>
+        <a href="#" class="btn2">free demo<span class="course-span"><i class="fa fa-angle-right"></i></span></a>
+    </div>
+    <section class="contact-container">
+        <h1 class="heading">Contact us</h1>
+         <div class="con-card"> 
+             <div class="card">
+                <div class="card-icon"><i class="fa fa-map-marker"></i></div>
+                <h2 class="card-t">ADDRESS</h2>
+                <p class="card-p1">No. 4, Varadharajapuram, Pallikarnai,<br>Chennai 600100.</p>
+                <div class="slide1"><i class="fa fa-angle-double-down"></i></div>
+             </div>
+             <div class="card">
+                <div class="card-icon"><i class="fa fa-phone"></i></div>
+                <h2 class="card-t">CALL US</h2>
+                <p class="card-p2">+91 95001 34467</p>
+                <div class="slide2"><i class="fa fa-angle-double-down"></i></div>
+             </div>
+             <div class="card">
+               <div class="card-icon"><i class="fa fa-envelope-o"></i></div>
+                <h2 class="card-t">EMAIL US</h2>
+                <p class="card-p3">wetechzones@gmail.com</p>
+                <div class="slide3"><i class="fa fa-angle-double-down"></i></div>
+             </div>
+    </section>
+    <div class="contact-container-bottom"></div>
+    <section class="entry-con">
+    <div class="container2">
+        <img src="bg-about.jpg" class="entry-img">
+        <h1 class="heading2">GET START</h1>
+        <p class="entry-p">We value your enquiry and we will make every effort to<br>contact you as soon as possible.</p>
+        <form>
+            <input type="text" class="tf1" placeholder="Your Name">
+            <input type="text" class="tf2" placeholder="Email Address">
+            <input type="text" class="tf3" placeholder="Phone Number">
+            <input type="text" class="tf4" placeholder="Location">
+            <input type="text" class="tf5" placeholder="Message">
+        </form>
+        <a href="#" class="entry-btn">Enquiry Now<span class="entry-btn-span"><i class="fa fa-angle-right"></i></span></a>
+    </div>
+    </section>
+    <div class="copy-right">
+        <h2 class="copy-right-p">Copyright  © 2021 - wetechzone.com</h2>
+    </div>
+</body>
+</html>

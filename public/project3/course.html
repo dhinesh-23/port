@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course-We Tech Zone</title>
+    <link href="" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+   font-family:georgia,'times new roman',times,serif;
+  }
+  nav{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background:rgb(255, 255, 255);
+}   
+.img{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left:70px;
+    top: 6px;;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;;
+}
+a{  
+   font-size: 14px;
+   font-family: Open Sans,Arial,sans-serif;
+   color:rgb(10, 10, 10);
+   text-decoration:none;
+   font-weight: 600;
+   cursor: pointer;
+}
+nav li a:hover{
+    color:#b0cac8;
+    transition: all 0.4s ease 0%;
+}
+.btn2{
+    position: absolute;
+    right: 10%;
+    top:3%;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    background:#256BED;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px 70px;
+    letter-spacing: 1.2px;
+    filter: drop-shadow(0px 5px 5px #555);
+}
+.course-span{
+    margin-left: 10px;
+    width:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+.btn2:hover span{
+    width: 30px;
+}
+.course{
+    width: 100vw;
+    height: 130px;
+    background-image:linear-gradient(180deg,#1271f0,#3fbbf5);
+    align-items: center;
+}
+.heading{
+    font-family: Open Sans,Arial,sans-serif;
+    color: white;
+    font-size: 45px;
+    text-shadow: 10px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 30px;
+}
+.card-con{
+    display: flex;
+    justify-content: center;
+    background-color: #F4F4F4;
+    height: 700px;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.course-card{
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+    border-radius:10px;
+    filter: drop-shadow(0px 0px 5px #555);
+}
+.Course-img{
+    background-color:transparent;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.png{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+.Course-a{
+    color:black;
+    background-color:transparent;
+    font-family:Open Sans,Arial,sans-serif ;
+    font-size: 20px;
+    border-radius: 13px;
+    padding: 5px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left:10px;
+    text-align: center;
+}
+.png:hover{
+    filter: contrast(50%);
+}
+.copy-right{
+    width: 100vw;
+    height: 80px;
+    background-color:#043B99;
+}
+.copy-right-p{
+    font-family:Open Sans,Arial,sans-serif ;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    padding-top:30px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <nav>
+            <img src="final-logo-01 (5).png" class="img">
+     <ul>
+       <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="course.html">COURSES</a></li>
+        <li><a href="">ONLINE SESSION</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+     </ul>
+        </nav>
+        <a href="#" class="btn2">free demo<span class="course-span"><i class="fa fa-angle-right"></i></span></a>
+    </div>
+    <div class="course">
+        <h1 class="heading">Courses</h1>
+    </div>
+          <section class="card-con">
+            <div class="course-card">
+                <div class="Course-img "><img src="amazon.png" alt="" class="png"></div>
+                <a href="#" class="Course-a">aws course</a>
+            </div>
+            <div class="course-card">
+             <div class="Course-img"><img src="3.png" alt="" class="png"></div>
+                 <a href="#" class="Course-a">python course</a>
+            </div>
+            <div class="course-card">
+             <div class="Course-img"><img src="7.jpg" alt="" class="png"></div>
+             <a href="#" class="Course-a">selenium automation course</a>
+            </div>   
+            <div class="course-card">
+             <div class="Course-img "><img src="1.png" alt="" class="png"></div>
+             <a href="#" class="Course-a">devops course</a>
+         </div>
+         <div class="course-card">
+          <div class="Course-img"><img src="6.png" alt="" class="png"></div>
+              <a href="#" class="Course-a">shell scripting course</a>
+         </div>
+         <div class="course-card">
+          <div class="Course-img"><img src="4.png" alt="" class="png"></div>
+          <a href="#" class="Course-a">linux course</a>
+         </section>   
+         <div class="copy-right">
+             <h2 class="copy-right-p">Copyright  © 2021 - wetechzone.com</h2>
+         </div>
+        
+   
+    
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+<head>
+<title>sport</title>
+<link href="logo1-removebg-preview.png" rel="icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<style>
+    *{
+   padding: 0%;
+   margin: 0%;
+   box-sizing:border-box;
+  font-family:georgia,'times new roman',times,serif;
+ }
+ body{
+    background: url(bl.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+nav{
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 15%;
+    background:black;
+}   
+.img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left:130px;
+    top: 3px;;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.span{
+   color:#d50000;
+}
+nav li{
+     display: inline-block;
+     list-style: none;
+     padding: 0px 20px;
+}
+a{
+    font-size: 20px;
+    font-weight: 500;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav li a:hover{
+     color:#d50000;
+     transition: all 0.4s ease 0%;
+}
+nav li.active a{
+    color:#d50000;
+    transition: all 0.4s ease 0%;
+}
+
+.login{
+position:absolute;
+right:5%;
+top:15px;
+background:#d50000;
+line-height:40%;
+height:50px;
+width:50px;
+text-align:center;
+border-radius:50%;
+cursor:pointer;
+}
+.login i{
+font-size:20px;
+line-height:80px;
+color:white;
+position:absolute;
+top:-30%;
+right:15px;
+}
+
+.containersearch{
+position:absolute;
+right:0%;
+top:3%;
+transform:translate (-50%, -50%);
+padding:10px;
+}
+input{
+height:40px;
+width:0px;
+outline:none;
+position:absolute;
+top:2%;
+right:3%;
+padding:0 20px;
+color:black;
+font-size:20px;
+box-sizing: border-box;
+border:1px solid #d50000;
+border-radius:50px;
+transition:all.7s ease;
+}
+::placeholder{
+color:grey;
+}
+.button{
+position:absolute;
+right:2%;
+top:-2px;
+background:#d50000;
+line-height:40%;
+height:50px;
+width:50px;
+text-align:center;
+border-radius:50%;
+cursor:pointer;
+}
+.button i{
+font-size:20px;
+line-height:80px;
+color:white;
+position:absolute;
+top:-30%;
+right:14px;
+transition:all.7s ease;
+}
+.containersearch:hover input{
+width: 200px;
+}
+.containersearch:hover i{
+transform: rotate(-350deg);
+}
+
+.sidebar{
+    background: black;
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:-100%;
+    overflow-y: auto;
+    transition: 0.6 ease;
+    transition-property:left ;
+}
+.sidebar.active{
+    left: 0;
+}
+.sidebar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+.sidebar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+.sidebar .menu .item a:hover{
+    background: #d50000;
+    transition: 0.3 ease;
+}
+.sidebar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3 ease;
+}
+.sidebar .menu .item .sub-menu{
+    background: #FF5252;
+    display: none;
+}
+.sidebar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+.rotate{
+    transform :rotate(90deg);
+}
+.close-btn{
+    position: absolute;
+    color: #d50000;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+.close-btn:hover{
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+    color: #d50000;
+}
+.menu-btn{
+    position: absolute;
+    color:#d50000;
+    font-size: 30px;
+    margin-top: -45px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.con{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.con .headeing{
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-decoration:capitalize;
+    text-transform: uppercase;
+}
+.con .menucontainer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.con .menucontainer .menu{
+    text-align: center;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: 0.1rem solid #ccc;
+    outline-offset: -0.7rem;
+}
+.con .menu-container .menu:hover{
+    outline-offset: 0;
+    outline: 0.1rem solid #000;
+
+}
+.con .menucontainer .menu img{
+    width: 100%;
+}
+.con .menucontainer .menu img:hover{
+    transform: scale(.9);
+}.con .menucontainer .menu h3,
+.con .menucontainer .menu .price{
+    font-size: 1.5rem;
+    color: #333;
+}
+.menu-preview{
+    position: fixed;
+    top:0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.menu-preview .preview{
+    display: none;
+    padding: 0.5rem; 
+    text-align: center;
+    position: relative;
+    /* margin: 1rem; */
+    width: 40%;
+    background: #fff;
+}
+.menu-preview .preview img{
+    width: 100%;
+}
+.menu-preview .preview.active{
+    display: inline-block;
+}
+.menu-preview .preview h3{
+    font-size: 2rem;
+    color: #333;
+}
+.menu-preview .preview .stars{
+    color: #d50000;
+    font-size: 1.2rem;
+}
+.menu-preview .preview .stars li{  
+    margin: 0 1rem ;
+    
+} 
+.menu-preview .preview p{
+    font-size: 1.8rem;
+    color: #333;
+}
+.menu-preview .preview a{
+    display: inline-block;
+    width: 10rem; height: 2.6rem;
+    background: #d50000;
+    color: honeydew;
+    font-size: 1.5rem;
+    border: 0.1rem solid #d50000;
+    border-radius: 0.5rem;
+}
+.menu-preview .preview a:hover{
+    background: none;
+    color: #333;
+}
+.menu-preview .preview .fa-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+.menu-preview .preview .fa-close:hover{
+    transform: rotate(180deg);
+    transition: all 0.2s linear;
+    color: #d50000;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(240, 80, 80);
+}
+</style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo2-removebg-preview.png" class="img">
+        <nav>
+            <h1>Indian<span class="span">Sport</span></h1>
+     <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+        </nav>
+    <div class="login">
+    <a href="login.html"> <i class="fa fa-user-circle"></i></a>
+    </div>
+      <div class ="containersearch">
+      <input type="search" value="" id="search" onchange="openpage()" placeholder="search">
+    <div class="button">
+    <i class="fa fa-search"></i>
+    </div>
+    </div>
+    <div class="menu-btn">
+        <i class="fa fa-reorder"></i>
+    </div>
+    <div class="sidebar">  
+        <div class="close-btn"> 
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="menu">
+            <div class="item">
+                <div class="sub-btn"><a href="#"> Sports Ball<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Foot Ball</a>
+                    <a href="#" class="subitem">Volly Ball</a>
+                    <a href="#" class="subitem">Basket Ball</a>
+                    <a href="#" class="subitem">Tennis Ball</a>
+                    <a href="#" class="subitem">Cricket Ball</a>
+                
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-btn"><a href="#">Badminton<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Badminton Rackets</a>
+                    <a href="#" class="subitem">Shuttlecock</a>
+                    <a href="#" class="subitem">String & Grip</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-btn"><a href="#">Tennis<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Tennis Rackets</a>
+                    <a href="#" class="subitem">Tennis kitbag</a>
+                    <a href="#" class="subitem">Tennis String & Grip</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-btn"><a href="#">Cricket<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Cricket Bat</a>
+                    <a href="#" class="subitem">Cricket Helmet</a>
+                    <a href="#" class="subitem">Cricket Gloves</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-btn"><a href="#">Skating<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Inline Skates</a>
+                    <a href="#" class="subitem">Roller Skates</a>
+                    <a href="#" class="subitem">Skateboad</a>
+                </div>
+            </div>   
+            <div class="item">
+                <div class="sub-btn"><a href="#">Shoes<i class="fa fa-angle-right dropdown"></i></a></div>
+                <div class="sub-menu"> 
+                    <a href="#" class="subitem">Badminton Shoes</a>
+                    <a href="#" class="subitem">Cricket Shoes</a>
+                    <a href="#" class="subitem">BasketBall Shoes </a>
+                    <a href="#" class="subitem">Tennis Shoes</a>
+                    <a href="#" class="subitem">FootBall Shoes</a>
+                    <a href="#" class="subitem">Running Shoes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="con">
+        <h3 class="headeing">football</h3> 
+        <div class="menucontainer">     
+    
+            <div class="menu" data-name="p-1">  
+                <img src="adidas.jpg" alt="imag">
+                <h3>nike shoes</h3>
+                <div class="price">$20.00</div>
+            </div>
+    
+            <div class="menu" data-name="p-2">
+                <img src="adidas.jpg" alt="imag">
+                <h3>fresh coffee</h3>
+                <div class="price">$20.00</div>
+            </div>
+    
+            <div class="menu" data-name="p-3">
+                <img src="adidas.jpg" alt="imag">
+                <h3>fresh coffee</h3>
+                <div class="price">$20.00</div>
+            </div>
+    
+            <div class="menu" data-name="p-4">
+                <img src="adidas.jpg" alt="imag">
+                <h3>fresh coffee</h3>
+                <div class="price">$20.00</div>
+            </div>
+    
+            <div class="menu" data-name="p-5">
+                <img src="adidas.jpg" alt="imag">
+                <h3>fresh coffee</h3>
+                <div class="price">$20.00</div>
+            </div>
+    
+            <div class="menu" data-name="p-6">
+                <img src="adidas.jpg" alt="imag">
+                <h3>fresh coffee</h3>
+                <div class="price">$20.00</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="menu-preview">   <!--products-preview-->
+    
+    <div class="preview" data-target="p-1">
+       <i class="fa fa-close"></i>
+       <img src="football.jfif" alt="">
+       <h3>football</h3>
+       <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-full"></i>
+       </div>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+       <div class="price">$2.00</div>
+      <div class="buy"> <a href="regsiter.html" >order now</a>
+    </div>
+    
+    <div class="preview" data-target="p-2">
+       <i class="fa fa-close"></i>
+       <img src="football.jfif" alt="">
+       <h3>football</h3>
+       <div class="stars">
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star"></i>
+         <i class="fa fa-star-half-full"></i>
+       </div>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+       <div class="price">$2.00</div>
+       <div class="buy"> <a href="regsiter.html" >order now</a>
+    </div>
+    
+    <div class="preview" data-target="p-3">
+        <i class="fa fa-close"></i>
+        <img src="football.jfif" alt="">
+        <h3>football</h3>
+        <div class="stars">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-full"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+        <div class="price">$2.00</div>
+        <div class="buy"><a href="regsiter.html">order now</a>
+    </div>  
+    
+    <div class="preview" data-target="p-4">
+        <i class="fa fa-close"></i>
+        <img src="football.jfif" alt="">
+        <h3>football</h3>
+        <div class="stars">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-full"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+        <div class="price">$2.00</div>
+        <div class="buy"><a href="regsiter.html">order now</a>
+    </div> 
+    
+    <div class="preview" data-target="p-5">
+        <i class="fa fa-close"></i>
+        <img src="football.jfif" alt="">
+        <h3>football</h3>
+        <div class="stars">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-full"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+        <div class="price">$2.00</div>
+        <div class="buy"><a href="regsiter.html">order now</a>
+    </div> 
+    
+    <div class="preview" data-target="p-6">
+        <i class="fa fa-close"></i>
+        <img src="" alt="">
+        <h3>fresh coffee</h3>
+        <div class="stars">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-full"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+        <div class="price">$2.00</div>
+        
+        <div class="buy"><a href="regsiter.html">order now</a>
+        
+    </div> 
+    
+    </div>
+    
+    
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleclass('rotate');
+        });
+        $('.menu-btn').click(function(){
+        $('.sidebar').addClass('active');
+        });
+        $('.close-btn').click(function(){
+        $('.sidebar').removeClass('active');
+        });
+    }); 
+</script>   
+<script>
+    let preveiwMenue = document.querySelector('.menu-preview');
+let previewBox = preveiwMenue.querySelectorAll('.preview');
+
+document.querySelectorAll('.menucontainer .menu').forEach(product =>{
+  product.onclick = () =>{
+    preveiwMenue.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-close').onclick = () =>{
+    close.classList.remove('active');
+    preveiwMenue.style.display = 'none';
+  };
+});
+
+
+</script>
+</body>
+</html>

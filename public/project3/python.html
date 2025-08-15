@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+<style>
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+   font-family:georgia,'times new roman',times,serif;
+  }
+  nav{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background:rgb(255, 255, 255);
+}   
+.img{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left:70px;
+    top: 6px;;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;;
+}
+a{  
+   font-size: 14px;
+   font-family: Open Sans,Arial,sans-serif;
+   color:rgb(10, 10, 10);
+   text-decoration:none;
+   font-weight: 600;
+   cursor: pointer;
+}
+nav li a:hover{
+    color:#b0cac8;
+    transition: all 0.4s ease 0%;
+}
+.btn2{
+    position: absolute;
+    right: 10%;
+    top:3%;
+    width: 150px;
+    height: 40px;
+    color:#fff;
+    background:#256BED;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px 70px;
+    letter-spacing: 1.2px;
+    filter: drop-shadow(0px 5px 5px #555);
+}
+.course-span{
+    margin-left: 10px;
+    width:0;
+    overflow:hidden;
+    transition:0.5s;
+}
+.btn2:hover span{
+    width: 30px;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 520px;
+    background-color:#0C71C3;
+}
+.amazon-logo{
+    position: absolute;
+    top: 8%;
+    left: 11%;
+    filter: drop-shadow( 28px 28px #569ee2);
+}
+.heading-1{
+  position: absolute;
+  left:39%;
+  top: 11%;
+  font-size: 40px;
+  font-family:Open Sans,Arial,sans-serif;;
+  font-weight:600;
+}
+.info{
+    position: absolute;
+    left: 39%;
+    top:23%;
+    height: 200px;
+    width: 600px;
+    background-color:#FFE500;
+}
+.txt{
+    font-family:Open Sans,Arial,sans-serif;;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    text-align:left;
+    color:black;
+    line-height: 35px;
+}
+.txt2{
+    font-family:Open Sans,Arial,sans-serif;;
+    font-size: 20px;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.container2{
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+
+.t1{
+    font-family: Open Sans,Arial,sans-serif;
+    color:black;
+    background-color:transparent;
+    font-size: 35px;
+    padding-top: 80px;
+    text-align: center;
+}
+.p1{
+    position: absolute;
+    left: 10%;
+    top: 34%;
+    width: 480px;
+    height: 250px;
+    color: #666666;
+    background-color:transparent;
+}
+.about-p{
+    font-family:Open Sans,Arial,sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+.p2{
+    position: absolute;
+    right: 10%;
+    top:34%;
+    width: 480px;
+    height: 250px;
+    color: #666666;
+    background-color:transparent;
+}
+.syllabus{
+    position: relative;
+    width: 100vw;
+    height: 1300px;
+    background-color: #F7F7F7;
+}
+.syllabus-h1{
+    font-family: Open Sans,Arial,sans-serif;
+    padding-top: 90px;
+    color:#333333;
+    font-size:35px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.accordian{
+    display: flexbox;
+    margin:60px 250px;
+    width: 350px;
+}
+.acc-li{
+    list-style: none;
+    width: 100%;
+    margin:20px;
+    padding: 10px;
+    background:#FFFFFF;
+}
+.acc-li label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #2A2A2A;
+    font-weight: 500;
+    border-left: 8px solid #3498db;
+    font-family: Open Sans,Arial,sans-serif;
+    cursor: pointer;
+}
+label i{
+    position: absolute;
+    right: 5%;
+    font-size: 20px;
+    color:#C9C9C9;
+}
+input[type="radio"]{
+    display: none;
+}
+.content i{
+    font-size:10px;
+    margin-right:10px ;
+}
+.accordian .content{
+    color: #666666;
+    border-left: 8px solid #3498db;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    justify-content:center;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+.accordian-2{
+    position: absolute;
+    right: 25%;
+    bottom: 4%;
+    width: 350px;
+}
+.acc-li-2{
+    list-style: none;
+    width: 100%;
+    margin:20px;
+    padding: 10px;
+    background:#FFFFFF;
+}
+.acc-li-2 label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #2A2A2A;
+    font-weight: 500;
+    border-left: 8px solid #3498db;
+    font-family: Open Sans,Arial,sans-serif;
+    cursor: pointer;
+}
+input[type="radio"]{ 
+    display: none;
+}
+.content-2 i{
+    font-size:10px;
+    margin-right:10px ;
+}
+.content-2{ 
+    color: #666666;
+    border-left: 8px solid #3498db;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    justify-content: left;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian-2 input[type="radio"]:checked + label +.content-2{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+.copy-right{
+    width: 100vw;
+    height: 80px;
+    background-color:#043B99;
+}
+.copy-right-p{
+    font-family:Open Sans,Arial,sans-serif ;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    padding-top:30px;
+}
+</style>
+</head>
+<body>
+    <div class="logo">
+        <nav>
+            <img src="final-logo-01 (5).png" class="img">
+     <ul>
+       <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="course.html">COURSES</a></li>
+        <li><a href="">ONLINE SESSION</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        </nav>
+        <a href="#" class="btn2">free demo<span class="course-span"><i class="fa fa-angle-right"></i></span></a>
+    </div>
+    <section class="container">
+        <img src="3.png" class="amazon-logo"></img>
+    <h1 class="heading-1">Python Course Training</h1>
+    <div class="info"><h2 class="txt">Are you looking for Best AWS Training in Chennai?<br>WE TECH ZONES is the right Destination for your Career!</h2></div>
+    </section>
+    <section class="container2">
+        <h1 class="t1">Python Training</h1>
+      <div class="p1"><p class="about-p">Get Amazon Web Services Training in Chennai at Fervent Techsoft with real time experts. Fervent Techsoft provides AWS training in Chennai to professionals and corporates with Certification and Placements.AWS Training in Chennai at Fervent Techsoft will be of great help to anyone who is looking to get into the AWS Cloud world. We believe that learning Amazon Web Services in mixture of Practical and Theoretical will be the easiest way to understand the technology in quick manner.
+      </p>
+      </div>
+      <div class="p2"><p class="about-p">We have designed our Amazon Web Services (AWS) course content and syllabus based on students requirement to achieve everyones career goal.<br>
+
+        Our Amazon Web Services (AWS) training center is furnished with lab facilities and excellent infrastructure. Amazon Web Services (AWS) training in chennai conducted on day time classes, weekend training classes, evening batch classes.       </p>
+      </div>
+    </section>
+    <section class="syllabus">
+        <h1 class="syllabus-h1">SYLLABUS</h1>
+       <ul class="accordian">
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="first" checked>
+               <label for="first">Compute (EC2)<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>AWS EC2 instance creation<br>
+                   <i class="fa fa-circle"></i>Instance upgrading<br>
+                   <i class="fa fa-circle"></i>Create image and restoring instance from image<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="second">
+               <label for="second">Storage<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>EBS<br>
+                   <i class="fa fa-circle"></i>EFS (NFS)<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="third">
+               <label for="third">Networking (VPC)<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>VPC creation & connection<br>
+                   <i class="fa fa-circle"></i>VPC with nat instant<br>
+                   <i class="fa fa-circle"></i>VPC nat-gatway<br>
+                   <i class="fa fa-circle"></i>VPC endpoin<br>
+                   <i class="fa fa-circle"></i>VPC flowlog<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="fourth">
+               <label for="fourth">vpc-connectivity<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>vpc-peering connection<br>
+                   <i class="fa fa-circle"></i>vpc peering with diff account<br>              
+                </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="fifth">
+               <label for="fifth">vpn-setup<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>vpn-connection<br>
+                   <i class="fa fa-circle"></i>vpc-peering &openvpn setup<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="sixth">
+               <label for="sixth">aws-cli<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>instance creation using cli<br>
+                   <i class="fa fa-circle"></i>volume creation,snapshot<br>
+                   <i class="fa fa-circle"></i>attach,detach volumes<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="seventh">
+               <label for="seventh">Object-storage<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>s3 bucket,object creation<br>
+                   <i class="fa fa-circle"></i>s3 bucket properties & accessing s3 through console<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="eigth">
+               <label for="eigth">Glacier<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>creating vault storage<br>
+                   <i class="fa fa-circle"></i>uploading,downloading data through aws-cli<br>
+              </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="ninth">
+               <label for="ninth">Elastic Loadbalancer(ELB)<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>classic elb creation & setup webservers<br>
+                   <i class="fa fa-circle"></i>High availability setup with autoscaling<br>
+                   <i class="fa fa-circle"></i>Application elb setup<br>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="tenth">
+               <label for="tenth">Route53<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>domain registration & Route53 record set maintain<br>
+                   <i class="fa fa-circle"></i>subdomain creation.<br>
+                   <i class="fa fa-circle"></i> Route53 route policies accross the glob<br>
+               </div>
+           </li>
+           <li class="acc-li">
+               <input type="radio" name="accordian" id="teen">
+               <label for="teen">Rds (Relational Database)<i class="fa fa-plus-circle"></i></label>
+               <div class="content">
+                   <i class="fa fa-circle"></i>Db engine creation & connect with webservers<br>
+                   <i class="fa fa-circle"></i>M-Z Read Replica setup<br>
+                   <i class="fa fa-circle"></i>Mysql Master-Slave setup different Regions<br>
+                   <i class="fa fa-circle"></i>mysql logs & Restoring through S3 bucket<br>
+               </div>
+           </li>
+       </ul> 
+   <ul class="accordian-2">
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="11" checked>
+           <label for="11">CloudFront - CDN<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>setting up Cloudfront from websits& speedup<br>
+           </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="12">
+           <label for="12">Aws Messaging Services<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>SNS,SQS,SES<br>
+           </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="13">
+           <label for="13">IAM(identity Access Management)<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i> Access Mangement for aws console<br>
+               <i class="fa fa-circle"></i> Roles,policies<br>
+           </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="14">
+           <label for="14">KMS<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>Keymanagement for aws securing storages<br>               
+            </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="15">
+           <label for="15">CloudTrail<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>auditing aws account & Tracking logs<br>
+           </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="17">
+           <label for="17">Monitoring Services<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>Cloudwatch Monitoring<br>
+           </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="18">
+           <label for="18">AWS Migration Services<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>VM to EC2 migration<br>
+          </div>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="19">
+           <label for="19">AWS Security issues<i class="fa fa-plus-circle"></i></label>
+           <div class="content-2">
+               <i class="fa fa-circle"></i>NACL<br>
+               <i class="fa fa-circle"></i>Trusted Advisor<br>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="20">
+           <label for="20">Troubleshooting issues<i class="fa fa-plus-circle"></i></label>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="21">
+           <label for="21">ECS - Elastic Container Service<i class="fa fa-plus-circle"></i></label>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="22">
+           <label for="22">Terraform and Cloud formation<i class="fa fa-plus-circle"></i></label>
+       </li>
+       <li class="acc-li-2">
+           <input type="radio" name="accordian-2" id="23">
+           <label for="23">Lamda<i class="fa fa-plus-circle"></i></label>
+       </li>
+   </ul>
+   </section>
+   <div class="copy-right">
+    <h2 class="copy-right-p">Copyright  © 2021 - wetechzone.com</h2>
+</div>
+</body>
+</html>
