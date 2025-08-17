@@ -110,7 +110,7 @@
     font-size:30px;
     font-family:cursive;
 }
-.content i{
+.i{
     color: #f66435;
     font-size: 30px;
 }
@@ -556,3 +556,185 @@ span {
   transform:scale(1.3)
 }
 
+@media screen and (max-width: 768px) {
+   .logo2{
+    max-width: 60px;
+    height: 60px;
+    margin-right:0px;
+   }
+   .nav2{
+    font-size: 10px;
+    width: 100vw;
+   }
+   .ul2{
+    margin-top: 15px;
+    margin-left:0px ;
+}
+.li2{
+    margin-right: 16px;
+}
+.li2:hover{
+   text-decoration:1.5px #f66435  underline;
+}
+.btn10{
+  min-width: 50px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.blob {
+    height: 190px;
+    background-color: #f4efca;
+    margin-left:0px;
+    margin-top: 60px;
+}
+.box{
+  height: 400px;
+  width:100%;
+}
+.content h1{
+    font-size:10px;
+    font-family:cursive;
+}
+.into{
+  height: 250px;
+}
+.content{
+   margin-left:10px;
+   width: 200px;
+   text-align: center;
+   padding-top: 80px;
+}
+.btn-into{
+  min-width: 80px;
+  height: 30px;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.btn-into:after {
+  font-size: 10px;
+  line-height: 30px;
+}
+.card-title{
+  font-size:20px;
+  text-decoration:underline #f66435;
+  padding-bottom: 10px;
+}
+.card{
+    max-height: 300px;
+    max-width: 250px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.card img{
+  height:150px;
+  width: 150px;
+}
+.card h1{
+  font-size:15px;
+}
+.card h2{
+  font-size:10px;
+  text-align:center;
+}
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+/* From Uiverse.io by mrhyddenn */ 
+.card-btn {
+  font-size: 10px;
+  font-weight: 600;
+  width: 80px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 10px;
+}
+.offer-con{
+  --s: 300px; /* adjust to control the size */
+  margin-top:0px;
+  margin-left:0px;
+  transform: translateX(-30px) translateY(-10px);
+}
+.offer-sec{
+  gap:0px 0px;
+}
+.offer-img{
+  height: 300px;
+  margin-top: 30px; 
+}
+.offer-title{
+  margin-top: 0px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.offer-title span{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.addcard-title{
+  font-size: 20px;
+}
+/* From Uiverse.io by mobinkakei */ 
+.cta {
+  padding: 8px 10px;
+  font-size: 10px;
+  margin-top: 10px;
+  transform: translateX(-30px);
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+
+.cta .second {
+  transition: 0.5s;
+  font-size: 10px;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 15px;
+}
+.footer{
+  --c:50px; /* control the curvature (works with percentage) */
+  height: 350px;
+  width: auto;
+}
+.foot{
+  padding-top: 90px;
+  gap: 0px 5px;
+}
+.footer-li{
+  margin-left:5px;
+  margin-bottom:2px;
+  font-size:8px;
+}
+.footer h1{
+  font-size: 10px;
+  margin-left:3px;
+}
+.socialmedia2{
+ display:inline-flex;
+}
+.socialmedia-title{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 10px;
+}
+.socialmedia2-i{
+  font-size: 15px;
+  margin-left: 10px;
+}
+}

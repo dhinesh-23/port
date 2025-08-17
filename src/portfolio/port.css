@@ -442,6 +442,7 @@ input[type="radio"]{
   animation: slide linear;
   animation-timeline:view();
   animation-range:entry 10px;
+  transition:1s ease;
 }
 @keyframes slide{
   from{opacity: 0;transform: translateX(-100px);}
@@ -955,6 +956,9 @@ input[type="radio"]{
     margin-top: 10px;
     margin-left: 30px;
    }
+   .skill-box:hover{
+    transform: scale(1.05) rotate(-20deg) translatey(-30px);
+ }
    .skill-box:hover.skill-box i{
     margin-left: 80px;
    }
