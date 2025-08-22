@@ -380,6 +380,7 @@ input[type="radio"]{
 .accordian .content{
     width: 100%;
     font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
     color: #666666;
     border-left: 5px solid #912376;
     background-color: #FFFFFF;
@@ -912,6 +913,7 @@ input[type="radio"]{
     font-size: 8px;
     border-left: 3px solid #912376;
     line-height: 15px;
+    transform: translatex(-10.4px);
    }
    .acc-li{
     padding: 4px;
