@@ -120,7 +120,7 @@
     color: blue;
     padding-top:5px;
 }
-.fb-graphchart span{
+.fb-graphchart em{
     padding-left: 50px;
     color: blue;
     font-weight:800;
@@ -133,7 +133,7 @@
 .what-graphchart{
     padding-top: 30px;
 }
-.what-graphchart span{
+.what-graphchart em{
     padding-left: 50px;
     color:lawngreen;
     font-weight:800;
@@ -152,7 +152,7 @@
 .insta-graphchart{
     padding-top: 30px;
 }
-.insta-graphchart span{
+.insta-graphchart em{
     padding-left: 50px;
     background-image: linear-gradient(45deg, #dd1e14 , #e0a919 25%, #d91ec6 50%, #781C1D 100%);
   background-clip: text;
@@ -180,7 +180,7 @@
 .twitter-graphchart{
     padding-top: 30px;
 }
-.twitter-graphchart span{
+.twitter-graphchart em{
     padding-left: 50px;
     color: rgb(0, 174, 255);
   font-weight: 800;
@@ -238,7 +238,7 @@
     text-align: center;
     color: aliceblue;
 }
-.graphfooter span{
+.graphfooter em{
     color: #00FFFF;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }

@@ -7,7 +7,7 @@ export default function Graphfooter() {
      
 
      <p>
-© 2025 Social Media Insights Dashboard | <h1>Created by Dhinesh </h1> |
+© 2025 Social Media Insights Dashboard | <em>Created by Dhinesh </em> |
 Data Source : Statista, DataReportal, PrioriData, DemandSage  
 All Rights Reserved.
 

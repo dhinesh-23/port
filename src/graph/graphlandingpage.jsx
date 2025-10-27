@@ -1,6 +1,6 @@
-import Gnav from "../../graph/src/graph/graphnav";
-import Graphhomecontent from "../../graph/src/graph/graphhomeconent"
-import Graphfooter from "../../graph/src/graph/graphfooter";
+import Gnav from "./graphnav";
+import Graphhomecontent from "./graphhomeconent"
+import Graphfooter from "./graphfooter";
 
 export default function Graphlandingpage (){
 

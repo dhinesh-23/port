@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import Portfolio from './portfolio.jsx'
 import { BrowserRouter, Route ,Routes} from 'react-router-dom'
 import ModelProject2 from './project2.jsx'
-import "../../graph/src/graph/graph.css"
-import Graphlandingpage from '../../graph/src/graph/graphlandingpage.jsx'
-import Graphchart from '../../graph/src/graph/graphchart.jsx'
-import Piechart from '../../graph/src/graph/piechart.jsx'
-import Barchart from '../../graph/src/graph/barchart.jsx'
+import "./graph/graph.css"
+import Graphlandingpage from './graph/graphlandingpage.jsx'
+import Graphchart from './graph/graphchart.jsx'
+import Piechart from './graph/piechart.jsx'
+import Barchart from './graph/barchart.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

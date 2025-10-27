@@ -10,7 +10,7 @@ export default function Gnav (){
 
     return(<>
          <nav className="graph-nav">
-            <img src="" alt="logo" className="graphlogo" />
+            <img src="./graphlogo.png" alt="logo" className="graphlogo" />
             <button onClick={actionbar} id="bar"><i class="fa fa-bars"></i></button>
          </nav>
         <div id="menu" hidden>
