@@ -52,14 +52,16 @@ export default function Project(){
         
           <div className="project-conent">
              <div className="project-box">
-                 <img src="./project2.png" alt="project4" className="project-img"/>
+                 <img src="./project4.png" alt="project4" className="project-img"/>
                    <div className="details">
                          <h1 className="details-t1">description <i class="fa fa-info-circle"> :</i></h1>
-                         <p className="details-p"> DNA Brand Dress & Accessories – Online Clothing Store A stylish and responsive e-commerce website for showcasing and selling trendy shirts and T-shirts. Features include a product catalog with detailed descriptions, an add-to-cart system, promotional sale banners, and a clean navigation layout. Designed with a soft, minimal color palette for a modern retail experience and optimized for both browsing and purchasing.</p>
-                         <button class="button10 type1"></button>
+                         <p className="details-p">This project analyzes social media usage trends of Facebook, Instagram, WhatsApp, and X (Twitter) from start to 2025. It includes data on downloads, user activity, and engagement patterns. Graphs like bar charts and pie charts visualize platform growth, peak usage years, and user behavior to show how social media popularity has evolved over time.</p>
+                          <Link to="/project4">
+                              <button class="button10 type1"></button>
+                        </Link>
                    </div>
             </div>
-                 <h1 className="project-t1">DNA Brand Dress & Accessories website</h1>
+                 <h1 className="project-t1">Social Media Usage and Growth Analysis</h1>
         </div>
 
         <div className="project-conent">
