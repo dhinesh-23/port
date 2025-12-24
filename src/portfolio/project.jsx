@@ -66,15 +66,20 @@ export default function Project(){
 
         <div className="project-conent">
              <div className="project-box">
-                 <img src="./project3.png" alt="project5" className="project-img"/>
+                 <img src="./project5.png" alt="project6" className="project-img"/>
                    <div className="details">
                          <h1 className="details-t1">description <i class="fa fa-info-circle"> :</i></h1>
-                         <p className="details-p"> DNA Brand Dress & Accessories – Online Clothing Store A stylish and responsive e-commerce website for showcasing and selling trendy shirts and T-shirts. Features include a product catalog with detailed descriptions, an add-to-cart system, promotional sale banners, and a clean navigation layout. Designed with a soft, minimal color palette for a modern retail experience and optimized for both browsing and purchasing.</p>
-                         <button class="button10 type1"></button>
+                         <p className="details-p">Hotel Mellow is a serene and modern hotel website that highlights comfort, elegance, and relaxation through a clean design, soft visuals, and user-friendly booking features, creating a smooth and welcoming experience for every guest.</p>
+                          <a href="./project5/section-task/index.html"><button class="button10 type1"></button></a>
                    </div>
             </div>
-                 <h1 className="project-t1">DNA Brand Dress & Accessories website</h1>
+                 <h1 className="project-t1">Hotel Mellow – Your Gateway to Serenity website</h1>
         </div>
+
+
+
+
+
          
        </div>
     
